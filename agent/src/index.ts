@@ -157,6 +157,7 @@ import { ankrPlugin } from "@elizaos/plugin-ankr";
 import { formPlugin } from "@elizaos/plugin-form";
 import { MongoClient } from "mongodb";
 import { quickIntelPlugin } from "@elizaos/plugin-quick-intel";
+import { teesaPlugin } from "@elizaos/plugin-teesa";
 
 import { trikonPlugin } from "@elizaos/plugin-trikon";
 import arbitragePlugin from "@elizaos/plugin-arbitrage";
@@ -1305,6 +1306,7 @@ export async function createAgent(
             getSecret(character, "DESK_EXCHANGE_NETWORK")
                 ? deskExchangePlugin
                 : null,
+            teesaPlugin,
         ]
             .flat()
             .filter(Boolean),
