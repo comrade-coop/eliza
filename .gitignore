@@ -1,4 +1,5 @@
 .pnpm-store
+teesa.character.json
 
 node_modules
 /out
